@@ -108,4 +108,87 @@
 
 // observer.broadcast('Hello from the observable')
 
+// Destructuring
+
+//Access Objects w/ Destruring
+// let { firstName, lastName } = person;
+
+// firstName
+// lastName
+
+//Rename var w/ Destruring
+
+// let { firstName: fName, lastName: lastName } = person;
+
+// fName
+// lastName
+
+// what happens if you you destruct a property that does not exist
+
+// let { firstName, lastName, middleName } = person
+// console.log(middleName); // undefined
+
+// Setting default when object desturcturing
+
+// let person = {
+//     firstName: 'kyle',
+//     lastName: ' wells',
+//     currentAge: 32,
+// };
+
+// let { firstName, lastName, middleName = '', currentAge: age = 32 } = person
+
+// console.log(middleName); //'
+// console.log(age); // 32
+
+// const arr = [1, 2, 3];
+// let [x, y, z] = arr;
+
+// let[a, b, c, d ] = [1, 2, 3, 4];
+
+// skipping items when arr des
+
+// const arrValue = ['one', 'two', 'three'];
+
+//  des assignment in arr
+// const [x, , z] = arrValue
+
+// console.log(x); // one
+// console.log(z); // three
+
+//des nested object
+
+// let member = {
+//     id: 1,
+//     name: {
+//         firstName: 'kyle',
+//         lastName: 'wells'
+
+//     }
+// };
+
+// des function arguments
+
+// let { id, name: {firstName, lastName}, name } = member;
+
+// let displayFullName = ({firstName, lastName}) => `${firstName} ${lastName}`;
+
+// let person = {
+//     firstName: 'kyle',
+//     lastName: 'wells'
+// };
+
+// displayFullName(person);
+
+// js spread operator
+// ...
+
+
+
+
+
+
+
+
+
 
