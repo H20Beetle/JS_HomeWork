@@ -183,6 +183,90 @@
 // js spread operator
 // ...
 
+// const temperatures = [76,72,68,79]
+// Math.min(...temperatures)
+
+// finds min in the arr, returns NaN if not using ...
+// in a string ... will pass each thing indavuial 
+// can combine arr [] w/ ... in a new arr
+
+// Memoization and Dynamic 
+// store last results
+
+// const preValues = []
+
+// function sqaure(n){
+//     if (preValues[n] != null) {
+//         return preValues[n]
+//     }
+//     let result = 0 
+//     for (let i = 1; <= n = ; i++) {
+//         for(let j = 1; j <= n; j++) {
+//             result += 1
+//         }
+//     }
+//     preValues[n] = result
+//     return result
+// }
+
+// function fib(n, preValues = []) {
+//     if(preValues[n != null]) {
+//         return preValues[n]
+//     }
+//     let result
+//     if (n <= 2) {
+//         result = 1 
+//     } else {
+//         result = fib(n - 1, preValues) + fib(n - 2, preValues)
+//     }
+//     preValues[n] = result
+//     return result
+// }
+
+// console.log(fib(40))
+
+// Callbacks 
+
+// console.log('1');
+// setTimeout(() => {
+//     console.log('2')
+// }, 100)
+// console.log('3')
+
+// const logHello =() => {
+//     console.log('Hello')
+// }
+
+// const names = ['james', 'jess', 'lily', 'sevy']
+
+// // names.forEach((name) => console.log(name))
+
+// const myForEach = (arr, cb) => {
+//     for ( let i = 0; i < arr.length; i++) {
+//         const element = arr[i];
+//         cb(element)
+//     }
+// }
+
+// myForEach(names, (name) =>{
+//     console.log(name);
+// })
+
+// const loadPokemon = (id, cb) => {
+//     fetch('http://pokeapi.co/api/v2/pokemon/${id}')
+//     .then(res => res.json())
+//     .then(data => {
+//         cb(data)
+//     })
+// }
+
+// loadPokemon(56, (pokemon) => {
+//     console.log(pokemon);
+// })
+
+// Callbacks/Promises/Async Await/Call stack/ect
+
+
 
 
 
